@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: stg_payments
+      description: Stage of payment data from stripe log table.
+      columns:
+        - name: payment_id
+          descripion: The primary key for each payment from stripe.
+          tests:
+            - unique
+            - not_null
